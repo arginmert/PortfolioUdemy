@@ -1,0 +1,42 @@
+﻿@model SocialMedia
+@{
+	ViewData["Title"] = "UpdateSocialMedia";
+	Layout = "~/Views/Layout/Index.cshtml";
+}
+
+
+
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">Sosyal Medya Güncelleme</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-header">
+						<div class="card-title">Sosyal Medya Güncelleme</div>
+					</div>
+					<div class="card-body">
+						<div class="card-sub">
+							Sosyal Medya Güncelleme işlemleri aşağıdaki panelde yapabilirsiniz :
+						</div>
+						<form method="post">
+							<input type="hidden" asp-for="SocialMediaId" />
+							<label>Site Adı</label>
+							<input type="text" asp-for="Title" class="form-control" />
+							<br />
+							<label>URL</label>
+							<input type="text" asp-for="Url" class="form-control" />
+							<br />
+							<label>Icon İsmi</label>
+							<input type="text" asp-for="Icon" class="form-control" />
+							<br />
+							<button class="btn btn-primary"> Güncellle</button>
+						</form>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
